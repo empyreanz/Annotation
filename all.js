@@ -23,6 +23,26 @@ function highlightSelection() {
     }
 }
 
+
+function highlightTest() {
+    console.log("click");
+    var range = _content.getSelectionRange();
+    console.log(range.toString());
+    var xPathRange = _xpath.createXPathRangeFromRange(range);
+    var range2 = _xpath.createRangeFromXPathRange(xPathRange);
+    var id = _stringUtils.createUUID({
+            beginWithLetter: true
+        });
+    var className = "default-hl"
+    var hl = _content.createHighlight(xPathRange, id, className);
+    _content.selectHighlight(id);
+    console.log(xPathRange.startContainerPath);
+    console.log(xPathRange.startOffset);
+    console.log(xPathRange.endContainerPath);
+    console.log(xPathRange.endOffset);
+    console.log(xPathRange.collapsed);
+}
+
 function getSelectionText() {
 	var text = "";
     if (window.getSelection) {
@@ -40,4 +60,5 @@ function highlightRange(range) {
        "background-color: yellow; display: inline;"
     );
     range.surroundContents(newNode);
+
 }

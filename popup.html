@@ -4,12 +4,16 @@
 <meta charset="utf-8">
 <title>popup</title>
 <link rel="stylesheet" href="css/popup.css">
-<script type="text/javascript" src="all.js"></script>
-
+<script src="all.js"></script>
+<script src="content.js"></script>
+<script src="highlighter.js"></script>
+<script src="string_utils.js"></script>
+<script src="xpath.js"></script>
+<script src="popup.js"></script>
 </head>
 <body>
 <div id="main">
-<a id="bookmark" href="#" onclick="highlightSelection()">
+<a id="bookmark" href="#">
     <div id="bookmark-annotate">
     	<b class="icon" style="background-color: red;"></b>
     	Annotate
@@ -33,7 +37,7 @@
 <a id="cached" href="javascript:void(0)">
 	<b class="icon" style="background-color: purple;"></b>Cached version
 </a>
-<p>ajsfdhkasdjkfasjkdhfk jadshkjfk</p>
+<p>ajsfdhkasdjkfasjkdhfk</p> <p>jadshkjfk</p>
 </div><!--end #main-->
 
 </div><!--end #search-main-->
