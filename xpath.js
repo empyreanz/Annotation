@@ -1,7 +1,7 @@
 /*global Node, XPathEvaluator, document, documentelement, XPathResult*/
 
 /*
- * This file is part of Super Simple Highlighter.
+ * This file is based on Super Simple Highlighter.
  * 
  * Super Simple Highlighter is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
