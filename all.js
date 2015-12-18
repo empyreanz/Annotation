@@ -1,6 +1,6 @@
 function highlightSelection() {
 	var selection;
-
+    alert("dfjk");
     //Get the selected stuff
     if (window.getSelection)
         selection = window.getSelection();
@@ -24,7 +24,7 @@ function highlightSelection() {
 }
 
 
-function highlightTest() {
+(function highlightTest() {
     console.log("click");
     var range = _content.getSelectionRange();
     console.log(range.toString());
@@ -41,24 +41,4 @@ function highlightTest() {
     console.log(xPathRange.endContainerPath);
     console.log(xPathRange.endOffset);
     console.log(xPathRange.collapsed);
-}
-
-function getSelectionText() {
-	var text = "";
-    if (window.getSelection) {
-        text = window.getSelection().toString();
-    } else if (document.selection && document.selection.type != "Control") {
-        text = document.selection.createRange().text;
-    }
-    return text;
-}
-
-function highlightRange(range) {
-    var newNode = document.createElement("div");
-    newNode.setAttribute(
-       "style",
-       "background-color: yellow; display: inline;"
-    );
-    range.surroundContents(newNode);
-
-}
+})();
