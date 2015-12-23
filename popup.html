@@ -13,37 +13,81 @@
 	<!-- For test -->
 	<script src="popup.js"></script>
 	<script src="tabs.js"></script>
-</head>
-<body>
-<div id="main">
-<!-- For test -->
-<a id="bookmark" href="javascript:void(0)">
-    <div id="bookmark-annotate">
-    	<b class="icon" style="background-color: red;"></b>
-    	Annotate
-    </div>
-</a>
-<a id="read-later" href="javascript:void(0)">
-<b class="icon" style="background-color: orange;"></b>Read Later
-</a>
-<a id="screenshot" href="javascript:void(0)">
-<b class="icon" style="background-color: yellow;"></b>Screenshot
-</a>
-<a id="share" href="javascript:void(0)">
-	<b class="icon" style="background-color: green;"></b>Share This Page
-</a>
-<a id="research-mode" href="javascript:void(0)">
-    <b class="icon" style="background-color: cyan;"></b>Focused Research
-</a>
-<a id="search" href="javascript:void(0)">
-    <b class="icon" style="background-color: blue;"></b>Search
-</a>
-<a id="cached" href="javascript:void(0)">
-	<b class="icon" style="background-color: purple;"></b>Cached version
-</a>
-<p>ajsfdhkasdjkfasjkdhfk</p> <p>jadshkjfk</p>
-</div><!--end #main-->
+	<script src="tool/jquery-2.1.3.min.js"></script>
+	<script src="tool/jquery.stylesheet.min.js"></script>
 
-</div><!--end #search-main-->
+
+</head>
+
+<style>
+#facebook_load_frame {
+ padding-top:50px;
+ width:100px;
+ height:30px;
+ border:0;
+ horizontal-align:center;
+/* position:absolute;
+ top:1250;*/
+ /*display:none;*/
+}
+</style>
+
+<body>
+	<!-- <div id="fb-root"></div> -->
+	<div id="main">
+
+	<!-- <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true"></div> -->
+	<!-- For test -->
+	<a id="out_highlight" href="javascript:void(0)">
+	    <div id="highlight" style="font-size:12px">
+	    	<b class="icon" style="background-color: yellow;"></b>
+	    	Highlight
+	    </div>
+	</a>
+	<br>
+	<a id="out_anotation" href="javascript:void(0)">
+	    <div id="anotation" style="font-size:12px">
+	    	<b class="icon" style="background-color: cyan;"></b>
+	    	Anotation
+	    </div>
+	</a>
+	<br>
+	<a id="out_load" href="javascript:void(0)">
+		<div id="load" style="font-size:12px">
+	    	<b class="icon" style="background-color: blue;"></b>
+	    	Load
+	    </div>
+	</a>
+	<br>
+	<a id="out_manage" href="javascript:void(0)">
+		<div id="manege" style="font-size:12px">
+	    	<b class="icon" style="background-color: purple;"></b>
+	    	Manage
+	    </div>
+	</a>
+	<br>
+<!-- 	<br>
+	<a >
+		<iframe id='loginFrame'></iframe>
+	</a> -->
+	
+<!-- 	<a id="screenshot" href="https://www.facebook.com/dialog/oauth?client_id=1023684864336462&response_type=token&redirect_uri=http://www.facebook.com/connect/login_success.html">
+		<b class="icon" style="background-color: yellow;"></b>Screenshot
+	</a> -->
+	<!--
+	<a id="share" href="javascript:void(0)">
+		<b class="icon" style="background-color: green;"></b>Share This Page
+	</a>
+	<a id="research-mode" href="javascript:void(0)">
+	    <b class="icon" style="background-color: cyan;"></b>Focused Research
+	</a>
+	<a id="search" href="javascript:void(0)">
+	    <b class="icon" style="background-color: blue;"></b>Search
+	</a>
+	<a id="cached" href="javascript:void(0)">
+		<b class="icon" style="background-color: purple;"></b>Cached version
+	</a> -->
+	</div><!--end #main-->
+
 </body>
 </html>
